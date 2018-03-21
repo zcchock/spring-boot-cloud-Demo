@@ -1,20 +1,12 @@
 
-package com.zcchock.provideruser.entity;
+package com.zcchock.consumermovie.pojo;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
 import java.util.Date;
 
-@Entity
-@Table(name = "USER_ENTITY")
-//@Data
 public class UserEntity {
 
-    @Id
     private String id;
     private String sex;
-    private String name;
     private Long tall;
     private Date birthday;
 
@@ -32,14 +24,6 @@ public class UserEntity {
 
     public void setSex(String sex) {
         this.sex = sex;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Long getTall() {

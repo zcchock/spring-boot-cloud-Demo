@@ -14,7 +14,6 @@ public class UserEntity {
     @Id
     private String id;
     private String sex;
-    private String name;
     private Long tall;
     private Date birthday;
 
@@ -32,14 +31,6 @@ public class UserEntity {
 
     public void setSex(String sex) {
         this.sex = sex;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Long getTall() {
