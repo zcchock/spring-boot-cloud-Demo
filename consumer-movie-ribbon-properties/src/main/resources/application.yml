@@ -1,0 +1,20 @@
+server:
+  port: 8094
+
+user:
+  userServiceUrl: http://localhost:8080/findUser?id=
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka
+  instance:
+    prefer-ip-address: true
+
+spring:
+  application:
+    name: consumer-movie
+
+provider-user:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
