@@ -28,4 +28,5 @@ public class TemplateController {
     public UserEntity findUser(@PathVariable String id) {
         return this.restTemplate.getForObject(url + id, UserEntity.class);
     }
+
 }
