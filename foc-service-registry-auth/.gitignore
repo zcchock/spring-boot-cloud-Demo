@@ -2,5 +2,4 @@
 .settings/
 .classpath
 target/
-.idea/
-*.iml
+.iml
