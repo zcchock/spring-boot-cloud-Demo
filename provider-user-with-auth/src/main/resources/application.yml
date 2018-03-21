@@ -1,0 +1,33 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+  application:
+    name: provider-user
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:9000/eureka/,http://peer2:9001/eureka/
+  instance:
+    prefer-ip-address: true
+
+#  jackson:
+#    date-format: yyyy-MM-dd HH:mm:ss
+#    time-zone: GMT+8
+
+server:
+  port: 8082
+
+
+info:
+  app:
+    name: @project.artifactId@
+    encoding: @project.build.sourceEncoding@
+    java:
+      source: @java.version@
+      target: @java.version@

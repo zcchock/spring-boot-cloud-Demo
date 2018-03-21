@@ -1,0 +1,16 @@
+server:
+  port: 9003
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://user:user@localhost:9000/eureka/
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: user

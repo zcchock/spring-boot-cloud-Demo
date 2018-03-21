@@ -1,0 +1,23 @@
+server:
+  port: 8997
+spring:
+  application:
+    name: gateway-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+
+management:
+  security:
+    enabled: false
+
+#zuul:
+#  PreRequestLogFilter:
+#    pre:
+#      disable: true
+
+#zuul:
+#  routes:
+#    provider-user: /user/**         # 自定义访问路径
+#  ignored-services: consumer-movie # 忽略映射服务
